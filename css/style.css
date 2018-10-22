@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -108,6 +108,34 @@ header .menu a {
 
 header .menu a:hover {
     color: #FCF588;
+}
+
+main h1 {
+    display: none;
+}
+main .main {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main .main-pc {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 140px;
+    }
+    main .main-sp {
+        display:none;
+    }
+}
+
+@media (max-width: 767px) {
+    main .main-pc {
+        display:none;
+    }
+    main .main-sp {
+        margin-top: 80px;
+    }
 }
 
 .shop-list {
