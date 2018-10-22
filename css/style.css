@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: repeating-linear-gradient(90deg, #FDF9B0, #FDF9B0 22px, #FCF588 22px, #FCF588 44px);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #F097BC;
+    border-bottom: solid 1px #fff;
+    text-align: left;
+}
+
+header .logo {
+    display: inline-block;
+    margin: 10px 0 6px 20px;
+}
+
+@media (max-width: 767px) {
+    header .container-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px #fff;
+    }
+
+    header .logo img {
+        width: 121px;
+    }
+
+    header .toggle {
+        color: inherit;
+        margin-right: 20px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 2.8rem;
+        cursor: pointer;
+    }
+
+    header .toggle:hover {
+        opacity: 0.3;
+    }
+
+    header .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    header .toggle {
+        display: none;
+    }
+
+    header .menu {
+        display: block !important;
+    }
+}
+
+header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .menu a {
+    display: block;
+    padding: 11px 22px;
+    color: inherit;
+    font-size: 2.0rem;
+    text-decoration: none;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header .menu ul {
+        display: flex;
+    }
+}
+
+header .menu a:hover {
+    color: #FCF588;
+}
+
+.shop-list {
+    background-color: #FEFCD7;
+}
+
+footer {
+    background-color: #6CC6CD;
+}
