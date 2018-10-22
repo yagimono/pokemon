@@ -110,9 +110,11 @@ header .menu a:hover {
     color: #FCF588;
 }
 
-main h1 {
+main h1,
+h2 {
     display: none;
 }
+
 main .main {
     width: 100%;
 }
@@ -124,18 +126,46 @@ main .main {
         margin-right: auto;
         margin-top: 140px;
     }
+
     main .main-sp {
-        display:none;
+        display: none;
     }
 }
 
 @media (max-width: 767px) {
     main .main-pc {
-        display:none;
+        display: none;
     }
+
     main .main-sp {
         margin-top: 80px;
     }
+}
+
+main .release-date {
+    background-color: #7ABFB1;
+}
+
+@media (min-width: 768px) {
+    main .release-date {
+        font-size: 5.3rem;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .release-date {
+        font-size: 2.2rem;
+        padding: 15px;
+    }
+}
+
+main .release-date-strong {
+    background-color: #E07D9B;
 }
 
 .shop-list {
