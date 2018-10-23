@@ -174,4 +174,11 @@ main .release-date-strong {
 
 footer {
     background-color: #6CC6CD;
+    padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+    footer {
+        font-size: 1.0rem
+    }
 }
