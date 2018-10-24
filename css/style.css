@@ -170,6 +170,80 @@ main .release-date-strong {
 
 .shop-list {
     background-color: #FEFCD7;
+    color: #78bfb1;
+    padding: 1px 20px 20px;
+}
+
+.shop-list h3 {
+    font-size: 4.0rem;
+    color: #78bfb1;
+}
+
+@media (max-width: 767px) {
+    .shop-list h3 {
+        font-size: 2.0rem;
+    }
+}
+
+.shop-list .box {
+    background-color: #fff;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    padding: 50px;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .shop-list .box {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+.shop-list .box ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shop-list .box li {
+    display: block;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .shop-list .box li {
+        width: 300px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .shop-list .box li:nth-child(4) {
+        clear: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .shop-list .box li {
+        width: 140px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .shop-list .box li:nth-child(3) {
+        clear: left;
+    }
+}
+
+.shop-list .box p {
+    text-align: right;
+    clear: left;
+    margin-bottom: 0
 }
 
 footer {
