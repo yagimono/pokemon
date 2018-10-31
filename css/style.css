@@ -96,7 +96,7 @@ header .menu a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1000px;
+        max-width: 1140px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -117,11 +117,12 @@ h2 {
 
 main .main {
     width: 100%;
+    margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
     main .main-pc {
-        max-width: 1000px;
+        max-width: 1140px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 140px;
@@ -161,11 +162,65 @@ main .release-date {
     main .release-date {
         font-size: 2.2rem;
         padding: 15px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }
 
 main .release-date-strong {
     background-color: #E07D9B;
+}
+
+.face-mask,
+.lip-cream,
+.hand-cream {
+    padding: 1px 20px 20px;
+}
+
+.face-mask .container,
+.lip-cream .container,
+.hand-cream .container {
+    background-color: #fff;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .container,
+    .lip-cream .container,
+    .hand-cream .container {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+main .link-button {
+    background-color: #7ABFB1;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    main .link-button {
+        font-size: 2.2rem;
+        padding: .8em 1.5em;
+        display: inline-block;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .link-button {
+        padding: .8em;
+        font-size: 1.2em;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 0 auto 40px;
+    }
 }
 
 .shop-list {
@@ -180,6 +235,12 @@ main .release-date-strong {
 }
 
 @media (max-width: 767px) {
+    .shop-list {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
     .shop-list h3 {
         font-size: 2.0rem;
     }
@@ -187,7 +248,7 @@ main .release-date-strong {
 
 .shop-list .box {
     background-color: #fff;
-    max-width: 1000px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -200,6 +261,7 @@ main .release-date-strong {
     .shop-list .box {
         font-size: 1.2rem;
         padding: 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -216,7 +278,7 @@ main .release-date-strong {
 
 @media (min-width: 768px) {
     .shop-list .box li {
-        width: 300px;
+        width: 320px;
         height: 50px;
     }
 }
