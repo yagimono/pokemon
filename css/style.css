@@ -164,6 +164,7 @@ main .release-date {
         padding: 15px;
         margin-left: -20px;
         margin-right: -20px;
+        margin-bottom: 50px;
     }
 }
 
@@ -174,7 +175,7 @@ main .release-date-strong {
 .face-mask,
 .lip-cream,
 .hand-cream {
-    padding: 1px 20px 20px;
+    padding: 1px 10px 20px;
 }
 
 .face-mask .container,
@@ -186,7 +187,99 @@ main .release-date-strong {
     margin-right: auto;
     margin-bottom: 100px;
     border-radius: 10px;
-    padding: 50px;
+}
+
+.face-mask .logo,
+.lip-cream .logo,
+.hand-cream .logo {
+    display: block;
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .logo,
+    .lip-cream .logo,
+    .hand-cream .logo {
+        width: 60%;
+        display: block;
+        margin: -40px auto 10px;
+    }
+}
+
+.face-mask .name,
+.lip-cream .name,
+.hand-cream .name {
+    clear: left;
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .name,
+    .lip-cream .name,
+    .hand-cream .name {
+        width: 90%;
+        display: block;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .price,
+    .lip-cream .price,
+    .hand-cream .price {
+        width: 50%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .effect-big,
+    .lip-cream .effect-big,
+    .hand-cream .effect-big {
+        width: 30%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .effect-small,
+    .lip-cream .effect-small,
+    .hand-cream .effect-small {
+        width: 20%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .image,
+    .lip-cream .image,
+    .hand-cream .image {
+        width: 100%;
+    }
+}
+
+.face-mask .note,
+.lip-cream .note,
+.hand-cream .note {
+    color: #000;
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+@media (max-width: 767px) {
+
+    .face-mask .note,
+    .lip-cream .note,
+    .hand-cream .note {
+        color: #000;
+        font-size: 1.0rem;
+        margin: 30px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -202,6 +295,11 @@ main .release-date-strong {
 main .link-button {
     background-color: #7ABFB1;
     color: #fff;
+    text-decoration: none;
+}
+
+main .link-button:hover {
+    color: #FCF588;
 }
 
 @media (min-width: 768px) {
@@ -210,6 +308,7 @@ main .link-button {
         padding: .8em 1.5em;
         display: inline-block;
         border-radius: 5px;
+        margin-bottom: 40px;
     }
 }
 
